@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+    margin-top: 100px;
+  }
+  
+  .music-plate_img{
+      --moving:0px;
+  }
+  
+  .cover-img{
+      width: 300px;
+      position: absolute;
+      z-index: 0px;
+  }
+  
+  .vinyl_svg{
+      position: absolute;
+      z-index: 0;
+      margin-left: var(--moving);
+      transition: .60s;
+  }
+  
+  .music-plate_img:hover{
+      --moving: 100px;
+  }
